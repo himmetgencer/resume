@@ -1,0 +1,1 @@
+![CI/CD](https://github.com/himmetgencer/resume/workflows/CI/CD/badge.svg)
