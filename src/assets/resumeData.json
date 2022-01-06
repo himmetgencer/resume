@@ -2,9 +2,9 @@
   "main": {
     "name": "Himmet GENCER",
     "occupation": "Software Developer",
-    "description": "Hi, I am Himmet. I am a Software R&D Coordinator at TDG Company. Most of my work is electronic projects. I create solutions and products for Structural Health Monitoring Sytems.",
+    "description": "Hi, I am Himmet. I am a software developer",
     "image": "profilepic.jpg",
-    "bio": "I am a Software R&D Coordinator at TDG Company. Most of my work is electronic projects. I create solutions and products for Structural Health Monitoring Sytems.",
+    "bio": "Hi, I am Himmet. I am a software developer, designing desktop, web, iot applications for embedded and test systems, especially I have developed notable applications in the electronics and test systems fields, such as designing data acquisition systems, data acquisition software, \"electromechanical and servo hydraulic control and test systems\" , \"web based desicion support systems for structural health monitoring center\"",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "himmetgencer@gmail.com",
     "phone": "",
@@ -66,7 +66,7 @@
         "company": "TDG Earthquake and Structural Health Monitoring Systems",
         "title": "Software Development Coordinator",
         "years": "2010 - Present",
-        "description": "Manage of Software R&D team Development and design of embedded systems, gui design such as data acquisition and test software, web applications and backend services for structural health monitoring"
+        "description": "Manage of software R&D team development and design of embedded systems, gui design such as data acquisition and test software, web applications and backend services for structural health monitoring"
       },
       {
         "company": "Turkcell Technology Research and Development",
@@ -78,13 +78,13 @@
     "skills": [
       {
         "name": "C/C++",
-        "description":"I use C/C++ for embedded programming on MCU.",
+        "description":"I use C/C++ for embedded programming on ARM MCUs.",
         "image": "cpp.jpg",
         "level": "90%"
       },
       {
         "name": "LabVIEW",
-        "description":"I use LabVIEW for GUI designs and applications such as data acquisition and test software.",
+        "description":"I use LabVIEW for GUI designs and applications, such as data acquisition and test applications.",
         "image": "labview.jpg",
         "level": "90%"
       },
@@ -102,19 +102,19 @@
       },      
       {
         "name": "Embedded Systems",
-        "description":"I have designed and developed many different Embedded Systems. STM32, NXP MCU,  I2C, SPI, CAN, RS485, UART, PWM, TCP, UDP, ADC, DAC, GPS, USB, RTOS .",
+        "description":"I have designed and developed a lot of embedded systems. STM32, NXP MCU,  I2C, SPI, CAN, RS485, UART, PWM, TCP, UDP, ADC, DAC, GPS, USB, RTOS .",
         "image": "embedded.jpg",
         "level": "90%"
       },
       {
         "name": "Measurement and Test Systems",
-        "description":"I have designed and developed many different Measurement and Test Systems. Such as Data Acquisition Systems, Servo Hydraulic and Electromechanical Test and Control Systems.",
+        "description":"I have designed and developed a lot of measurement and test Systems, such as data acquisition systems, servo hydraulic and electromechanical test and control systems.",
         "image": "ate.jpg",
         "level": "90%"
       },      
       {
         "name": "Sensor Technologies",
-        "description":"I have used many different sensors. Accelerometer, Strain Gauge, IMU, Thermocouple, Loadcell, Tiltmeter, Displacement .",
+        "description":"I have designed applications using several sensors. Accelerometer, Strain Gauge, IMU, Thermocouple, Loadcell, Tiltmeter, Displacement, Crack, Wind .",
         "image": "imu.jpg",
         "level": "90%"
       },
