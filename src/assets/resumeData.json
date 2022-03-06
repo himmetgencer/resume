@@ -63,9 +63,15 @@
     ],
     "work": [
       {
+        "company": "Turkish Aerospace Industries, Inc. (TAI)",
+        "title": "Software Development Specialist",
+        "years": "2022 - Present",
+        "description": ""
+      },
+      {
         "company": "TDG Earthquake and Structural Health Monitoring Systems",
         "title": "Software Development Coordinator",
-        "years": "2010 - Present",
+        "years": "2010 - 2022",
         "description": "Manage of software R&D team development and design of embedded systems, gui design such as data acquisition and test software, web applications and backend services for structural health monitoring"
       },
       {
