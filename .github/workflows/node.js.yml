@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+# GitHub Action'a repoya dosya yazma yetkisi veriyoruz
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -28,11 +32,11 @@ jobs:
       run: npm install
 
     - name: Build
-      # CI=false, build sırasında çıkan warning'lerin hata olarak algılanmasını engeller.
       run: CI=false npm run build
 
     - name: Deploy
-      uses: peaceiris/actions-gh-pages@v4 # Popüler ve güvenli bir deployment action
+      uses: peaceiris/actions-gh-pages@v4
       with:
-        github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        publish_dir: ./build # React build klasörün
+        # Kendi secret'ın yerine GitHub'ın otomatik token'ını kullanıyoruz
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
