@@ -2,9 +2,9 @@
   "main": {
     "name": "Himmet GENCER",
     "occupation": "Software Developer",
-    "description": "Hi, I am Himmet. I am a software developer",
+    "description": "Hi, I am Himmet. I am a Test Software Architect",
     "image": "profilepic.jpg",
-    "bio": "As a software developer, I specialize in designing desktop, control, embedded, IoT, and web applications for embedded and testing systems. I have particular expertise in the electronics and test systems fields, having developed notable applications such as automated test rigs, data acquisition systems, and electromechanical, servo-hydraulic control and test systems. Additionally, I have created web-based decision support systems for structural health monitoring center.",
+    "bio": "As a Test Software Architect, I specialize in designing desktop, control, embedded, IoT applications for aerospace and embedded test systems. I have particular expertise in the electronics and aerospace test systems, having developed notable applications such as automated test rigs, data acquisition systems, electromechanical, servo-hydraulic control and test systems. As the Founder of LabVIEW Türkiye Community, I bridge the gap between global standards and local expertise. I leverage my background in mission-critical test systems to foster growth and proficiency within the LabVIEW community.",
     "contactmessage": "Here is where you should write your message to readers to have them get in contact with you.",
     "email": "himmetgencer@gmail.com",
     "phone": "",
