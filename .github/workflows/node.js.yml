@@ -12,40 +12,27 @@ jobs:
 
     strategy:
       matrix:
-        # Node 14 yerine 20.x kullanmanı şiddetle öneririm.
-        node-version: [14.x] 
+        node-version: [14.x]
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4 # v2 -> v4 güncellendi
+      uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v4 # v2 -> v4 güncellendi
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-
-    - name: Cache dependencies
-      uses: actions/cache@v4 # Hata veren v2 -> v4 güncellendi
-      with:
-        path: |
-          **/node_modules
-        key: ${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
 
     - name: Install dependencies
       run: npm install
 
     - name: Build
+      # CI=false, build sırasında çıkan warning'lerin hata olarak algılanmasını engeller.
       run: CI=false npm run build
 
     - name: Deploy
-      run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
-        npm run deploy
-      env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+      uses: peaceiris/actions-gh-pages@v4 # Popüler ve güvenli bir deployment action
+      with:
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKEN }}
-        repository: ${{ github.repository }}
+        publish_dir: ./build # React build klasörün
